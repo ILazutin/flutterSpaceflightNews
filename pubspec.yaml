@@ -29,6 +29,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  http: any
+  flutter_bloc: any
+  equatable: any
+  json_serializable: any
+  json_annotation: any
+  retrofit: any
+  auto_size_text: any
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -38,6 +45,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  retrofit_generator: any
+  build_runner: any
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
