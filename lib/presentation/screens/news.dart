@@ -25,7 +25,7 @@ class _NewsListState extends State<NewsScreen> {
         } else if (state.status == ArticleStatus.success) {
           return SafeArea(
               child: Padding(
-                padding: const EdgeInsets.all(16),
+                padding: const EdgeInsets.all(4),
                   child: RefreshIndicator(
                     onRefresh: () async => BlocProvider.of<ArticlesBloc>(context).add(ArticlesLoad(limit: _limit)),
                     child: ListView.builder(

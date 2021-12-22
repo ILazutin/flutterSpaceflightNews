@@ -10,9 +10,9 @@ class ArticleItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const double _height = 360.0;
+    const double _height = 310.0;
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(4.0),
       child: SizedBox(
         height: _height,
         child: Card(
@@ -52,7 +52,7 @@ class _ArticleItemContent extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0),
+          padding: const EdgeInsets.fromLTRB(8.0, 4.0, 8.0, 0),
           child: DefaultTextStyle(
             softWrap: false,
             style: titleStyle!,
@@ -61,7 +61,7 @@ class _ArticleItemContent extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0),
+          padding: const EdgeInsets.fromLTRB(8.0, 4.0, 8.0, 0),
           child: DefaultTextStyle(
             softWrap: false,
             style: theme.textTheme.subtitle1!,
@@ -69,6 +69,7 @@ class _ArticleItemContent extends StatelessWidget {
             child: AutoSizeText(
               article.summary,
               maxLines: 3,
+              minFontSize: theme.textTheme.subtitle1!.fontSize!,
             ),
           ),
         ),
